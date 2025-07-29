@@ -1,0 +1,822 @@
+[
+   "https://account.microsoft.com/services/api/subscriptions-and-alerts?excludeWindowsStoreInstallOptions=false&excludeLegacySubscriptions=false#https://account.microsoft.com/services?lang=en-US",
+   {
+      "active": [
+         {
+            "modelId": "officehomeandstudent2021",
+            "brandId": "OfficeHomeAndStudent2021",
+            "brandLogo": "//img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWL2WE?ver=830c&w=150&h=150&q=60&m=6&o=f#https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Office-2021-Home-Student-EN-1?ver=830c&w=150&h=150&q=60&m=6&o=f",
+            "productId": "CFQ7TTC0H8N8",
+            "skuId": "",
+            "skuType": "officePerpetual",
+            "id": "00000000000000000000000000000000",
+            "licenseId": "00000000000000000000000000000000",
+            "entitlementSkuId": "0006",
+            "type": "entitlement",
+            "isPerpetual": true,
+            "isTrial": false,
+            "isFree": false,
+            "category": 1,
+            "payment": null,
+            "backupPayment": null,
+            "name": "Office Home & Student 2021",
+            "autorenews": false,
+            "locale": null,
+            "market": "CN",
+            "endDate": null,
+            "startDate": "02/06/2023 10:38:35",
+            "daysRemaining": -1,
+            "pastDueBalance": null,
+            "nextCharge": null,
+            "billingId": null,
+            "productRenewal": null,
+            "excludedPaymentTags": null,
+            "includedPaymentTags": null,
+            "includedPaymentInstrumentTagsForLegacySubsForPIDL": null,
+            "renewFlow": 0,
+            "changePaymentFlow": 0,
+            "upgradeFlow": 0,
+            "upgradeConfig": null,
+            "downgradeFlow": 0,
+            "partnerBilling": null,
+            "bi": {
+               "awa-prtnm": "OfficeHomeAndStudent2021",
+               "awa-subnm": "Office Home & Student 2021",
+               "awa-skuid": "",
+               "awa-recurid": "00000000000000000000000000000000",
+               "awa-usersubtype": "Perpetual",
+               "awa-substype": "Entitlement",
+               "awa-substate": "Active",
+               "awa-mee_custom10": "OfficePerpetual",
+               "awa-mee_custom18": "CN",
+               "awa-billingState": "Unknown",
+               "awa-isGuest": "False",
+               "awa-subdsp": 903,
+               "awa-sharingSlots": "",
+               "awa-devicesInstalled": "0",
+               "awa-isPrepaid": "True",
+               "awa-isTestUser": "False",
+               "awa-hasCopilotPro": "False",
+               "awa-activeSubs": "OfficeHomeAndStudent2021",
+               "awa-canceledSubs": "",
+               "awa-activeProducts": "CFQ7TTC0H8N8",
+               "awa-canceledProducts": "",
+               "awa-product": "CFQ7TTC0H8N8",
+               "awa-pitypecurr": null,
+               "awa-mee_custom4": "31",
+               "awa-mee_custom15": "False"
+            },
+            "redeemTokenUrl": null,
+            "payNow": {
+               "totalAmount": 0.0,
+               "total": "$0.00",
+               "tax": null,
+               "totalRemainingOnBackup": "$0.00",
+               "items": [],
+               "currency": null,
+               "totalBeforeTax": "$0.00"
+            },
+            "sharingDetails": null,
+            "csvAmount": 0.0,
+            "csvAmountFormatted": "$0.00",
+            "installDetails": {
+               "isInstallAllowed": true,
+               "platformUnspportedMessageKey": null,
+               "installerDownloadDetails": {
+                  "title": null,
+                  "languages": [
+                     {
+                        "id": "en-US",
+                        "name": "English",
+                        "isDefault": true
+                     },
+                     {
+                        "id": "ar-SA",
+                        "name": "العربية",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "bg-BG",
+                        "name": "Български",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "zh-CN",
+                        "name": "中文(简体)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "zh-TW",
+                        "name": "中文(繁體)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "hr-HR",
+                        "name": "Hrvatski",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "cs-CZ",
+                        "name": "Čeština",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "da-DK",
+                        "name": "Dansk",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "nl-NL",
+                        "name": "Nederlands",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "et-EE",
+                        "name": "Eesti",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "fi-FI",
+                        "name": "Suomi",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "fr-FR",
+                        "name": "Français",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "de-DE",
+                        "name": "Deutsch",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "el-GR",
+                        "name": "Ελληνικά",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "he-IL",
+                        "name": "עברית",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "hi-IN",
+                        "name": "हिंदी",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "hu-HU",
+                        "name": "Magyar",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "id-ID",
+                        "name": "Indonesia",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "it-IT",
+                        "name": "Italiano",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ja-JP",
+                        "name": "日本語",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "kk-KZ",
+                        "name": "Қазақ Тілі",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ko-KR",
+                        "name": "한국어",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "lv-LV",
+                        "name": "Latviešu",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "lt-LT",
+                        "name": "Lietuvių",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ms-MY",
+                        "name": "Bahasa Melayu",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "nb-NO",
+                        "name": "Norsk Bokmål",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "pl-PL",
+                        "name": "Polski",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "pt-BR",
+                        "name": "Português (Brasil)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "pt-PT",
+                        "name": "Português (Portugal)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ro-RO",
+                        "name": "Română",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ru-RU",
+                        "name": "Русский",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sr-Latn-RS",
+                        "name": "Srpski",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sk-SK",
+                        "name": "Slovenčina",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sl-SI",
+                        "name": "Slovenščina",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "es-ES",
+                        "name": "Español",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sv-SE",
+                        "name": "Svenska",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "th-TH",
+                        "name": "ไทย",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "tr-TR",
+                        "name": "Türkçe",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "uk-UA",
+                        "name": "Українська",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "vi-VN",
+                        "name": "Tiếng Việt",
+                        "isDefault": false
+                     }
+                  ],
+                  "versions": [
+                     {
+                        "name": "Office Home & Student 2021  – {platformOSX}",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "osx",
+                        "isDefault": false
+                     },
+                     {
+                        "name": "Office Home & Student 2021  – {platformWindowsDefault} ({default})",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "windowsDefault",
+                        "isDefault": true
+                     },
+                     {
+                        "name": "Office Home & Student 2021  – {platformWin32}",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "win32",
+                        "isDefault": false
+                     },
+                     {
+                        "name": "Office Home & Student 2021  – {platformWin64}",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "win64",
+                        "isDefault": false
+                     }
+                  ],
+                  "defaultOption": {
+                     "versionName": "Office Home & Student 2021  – {platformWindowsDefault} ({default})",
+                     "channel": "default",
+                     "clientVersion": "office2019",
+                     "platform": "windowsDefault",
+                     "displayText": "{platformWindowsDefault}, English",
+                     "languageId": "en-US"
+                  },
+                  "offlineInstallVersion": {
+                     "name": "",
+                     "channel": "offline",
+                     "clientVersion": "office2019",
+                     "platform": "win32",
+                     "isDefault": false
+                  },
+                  "showOtherOptions": true,
+                  "helpLinks": null
+               },
+               "installsUsed": [],
+               "showInstallations": false,
+               "maximumInstallations": 0,
+               "canUseInstallOptions": false,
+               "installHelpLink": "https://go.microsoft.com/fwlink/?LinkId=532747#https://support.office.com/article/d0c3b800-3f7b-4f92-962e-6198d4506ef5?wt.mc_id=O365_Cons_MyAcct_Install_NeedHelp#https://support.microsoft.com/article/d0c3b800-3f7b-4f92-962e-6198d4506ef5?wt.mc_id=O365_Cons_MyAcct_Install_NeedHelp#/en-us/office/get-help-installing-microsoft-365-family-d0c3b800-3f7b-4f92-962e-6198d4506ef5?wt.mc_id=O365_Cons_MyAcct_Install_NeedHelp",
+               "supportedClientPlatform": "cloudOS, macOS, windows"
+            },
+            "isMacOS": false,
+            "isRUMarketUnsupported": false,
+            "hasSkypeBenefit": false,
+            "serviceBannerContent": {
+               "slot2": null,
+               "slot3": null,
+               "slot4": null
+            },
+            "isSwitchPlanEligible": false,
+            "status": 1,
+            "purchaseLink": null,
+            "soldToAddressId": null,
+            "isValidateAddressNeeded": false,
+            "cycleDurationInMonths": null,
+            "billingState": 0,
+            "isXboxBrandId": false,
+            "isM365BrandId": false,
+            "isM365FullSku": false,
+            "isM365BasicSku": false,
+            "isHomeSKU": false,
+            "isM365ClassicSku": false,
+            "hasAIBenefits": false,
+            "convertedTo": null,
+            "upgradeToProductName": null,
+            "isCancellable": false,
+            "canTurnOffRecurringBilling": false,
+            "lastCharge": null,
+            "renewalRecurrence": null,
+            "isDowngradePending": false,
+            "isSinglePerpetual": true,
+            "isGroupPerpetual": false,
+            "isVatTextApplicable": false,
+            "isBillingDetailsAvailable": false,
+            "isXboxFamily": false,
+            "externallyManagedLink": null,
+            "isGuest": false,
+            "isXaa": false,
+            "renewPaths": {},
+            "isAutoRenewOffDueToInactivity": false,
+            "isSystemAutoRenewOffDueToIncorrectSubscriptionRegion": false,
+            "canEnableAutoRenew": false,
+            "quantity": 1,
+            "hasCopilotPro": false,
+            "isEligibleForOneMonthOffer": false,
+            "isSubscriptionNearExpiring": false,
+            "userConsent": null,
+            "cancelDowngradeUserConsent": null
+         }
+      ],
+      "commercial": [],
+      "canceled": [],
+      "hasPerpetual": true,
+      "landingPageBanner": null,
+      "allPossibleAddressIds": {},
+      "alerts": {
+         "alerts": []
+      }
+   },
+   "https://account.microsoft.com/services/api/subscriptions-and-alerts?excludeWindowsStoreInstallOptions=false&excludeLegacySubscriptions=false#https://account.microsoft.com/services?lang=zh-CN",
+   {
+      "active": [
+         {
+            "modelId": "officehomeandstudent2021",
+            "brandId": "OfficeHomeAndStudent2021",
+            "brandLogo": "//img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWL2WE?ver=830c&w=150&h=150&q=60&m=6&o=f#https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Office-2021-Home-Student-EN-1?ver=830c&w=150&h=150&q=60&m=6&o=f",
+            "productId": "CFQ7TTC0H8N8",
+            "skuId": "",
+            "skuType": "officePerpetual",
+            "id": "00000000000000000000000000000000",
+            "licenseId": "00000000000000000000000000000000",
+            "entitlementSkuId": "0006",
+            "type": "entitlement",
+            "isPerpetual": true,
+            "isTrial": false,
+            "isFree": false,
+            "category": 1,
+            "payment": null,
+            "backupPayment": null,
+            "name": "Office 家庭和学生版 2021",
+            "autorenews": false,
+            "locale": null,
+            "market": "CN",
+            "endDate": null,
+            "startDate": "02/06/2023 10:38:35",
+            "daysRemaining": -1,
+            "pastDueBalance": null,
+            "nextCharge": null,
+            "billingId": null,
+            "productRenewal": null,
+            "excludedPaymentTags": null,
+            "includedPaymentTags": null,
+            "includedPaymentInstrumentTagsForLegacySubsForPIDL": null,
+            "renewFlow": 0,
+            "changePaymentFlow": 0,
+            "upgradeFlow": 0,
+            "upgradeConfig": null,
+            "downgradeFlow": 0,
+            "partnerBilling": null,
+            "bi": {
+               "awa-prtnm": "OfficeHomeAndStudent2021",
+               "awa-subnm": "Office 家庭和学生版 2021",
+               "awa-skuid": "",
+               "awa-recurid": "00000000000000000000000000000000",
+               "awa-usersubtype": "Perpetual",
+               "awa-substype": "Entitlement",
+               "awa-substate": "Active",
+               "awa-mee_custom10": "OfficePerpetual",
+               "awa-mee_custom18": "CN",
+               "awa-billingState": "Unknown",
+               "awa-isGuest": "False",
+               "awa-subdsp": 903,
+               "awa-sharingSlots": "",
+               "awa-devicesInstalled": "0",
+               "awa-isPrepaid": "True",
+               "awa-isTestUser": "False",
+               "awa-hasCopilotPro": "False",
+               "awa-activeSubs": "OfficeHomeAndStudent2021",
+               "awa-canceledSubs": "",
+               "awa-activeProducts": "CFQ7TTC0H8N8",
+               "awa-canceledProducts": "",
+               "awa-product": "CFQ7TTC0H8N8",
+               "awa-pitypecurr": null,
+               "awa-mee_custom4": "31",
+               "awa-mee_custom15": "False"
+            },
+            "redeemTokenUrl": null,
+            "payNow": {
+               "totalAmount": 0.0,
+               "total": "¥0.00",
+               "tax": null,
+               "totalRemainingOnBackup": "¥0.00",
+               "items": [],
+               "currency": null,
+               "totalBeforeTax": "¥0.00"
+            },
+            "sharingDetails": null,
+            "csvAmount": 0.0,
+            "csvAmountFormatted": "¥0.00",
+            "installDetails": {
+               "isInstallAllowed": true,
+               "platformUnspportedMessageKey": null,
+               "installerDownloadDetails": {
+                  "title": null,
+                  "languages": [
+                     {
+                        "id": "zh-CN",
+                        "name": "中文(简体)",
+                        "isDefault": true
+                     },
+                     {
+                        "id": "ar-SA",
+                        "name": "العربية",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "bg-BG",
+                        "name": "Български",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "zh-TW",
+                        "name": "中文(繁體)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "hr-HR",
+                        "name": "Hrvatski",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "cs-CZ",
+                        "name": "Čeština",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "da-DK",
+                        "name": "Dansk",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "nl-NL",
+                        "name": "Nederlands",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "en-US",
+                        "name": "English",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "et-EE",
+                        "name": "Eesti",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "fi-FI",
+                        "name": "Suomi",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "fr-FR",
+                        "name": "Français",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "de-DE",
+                        "name": "Deutsch",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "el-GR",
+                        "name": "Ελληνικά",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "he-IL",
+                        "name": "עברית",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "hi-IN",
+                        "name": "हिंदी",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "hu-HU",
+                        "name": "Magyar",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "id-ID",
+                        "name": "Indonesia",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "it-IT",
+                        "name": "Italiano",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ja-JP",
+                        "name": "日本語",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "kk-KZ",
+                        "name": "Қазақ Тілі",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ko-KR",
+                        "name": "한국어",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "lv-LV",
+                        "name": "Latviešu",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "lt-LT",
+                        "name": "Lietuvių",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ms-MY",
+                        "name": "Bahasa Melayu",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "nb-NO",
+                        "name": "Norsk Bokmål",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "pl-PL",
+                        "name": "Polski",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "pt-BR",
+                        "name": "Português (Brasil)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "pt-PT",
+                        "name": "Português (Portugal)",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ro-RO",
+                        "name": "Română",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "ru-RU",
+                        "name": "Русский",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sr-Latn-RS",
+                        "name": "Srpski",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sk-SK",
+                        "name": "Slovenčina",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sl-SI",
+                        "name": "Slovenščina",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "es-ES",
+                        "name": "Español",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "sv-SE",
+                        "name": "Svenska",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "th-TH",
+                        "name": "ไทย",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "tr-TR",
+                        "name": "Türkçe",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "uk-UA",
+                        "name": "Українська",
+                        "isDefault": false
+                     },
+                     {
+                        "id": "vi-VN",
+                        "name": "Tiếng Việt",
+                        "isDefault": false
+                     }
+                  ],
+                  "versions": [
+                     {
+                        "name": "Office 家庭和学生版 2021  – {platformOSX}",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "osx",
+                        "isDefault": false
+                     },
+                     {
+                        "name": "Office 家庭和学生版 2021  – {platformWindowsDefault} ({default})",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "windowsDefault",
+                        "isDefault": true
+                     },
+                     {
+                        "name": "Office 家庭和学生版 2021  – {platformWin32}",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "win32",
+                        "isDefault": false
+                     },
+                     {
+                        "name": "Office 家庭和学生版 2021  – {platformWin64}",
+                        "channel": "default",
+                        "clientVersion": "office2019",
+                        "platform": "win64",
+                        "isDefault": false
+                     }
+                  ],
+                  "defaultOption": {
+                     "versionName": "Office 家庭和学生版 2021  – {platformWindowsDefault} ({default})",
+                     "channel": "default",
+                     "clientVersion": "office2019",
+                     "platform": "windowsDefault",
+                     "displayText": "{platformWindowsDefault}, 中文(简体)",
+                     "languageId": "zh-CN"
+                  },
+                  "offlineInstallVersion": {
+                     "name": "",
+                     "channel": "offline",
+                     "clientVersion": "office2019",
+                     "platform": "win32",
+                     "isDefault": false
+                  },
+                  "showOtherOptions": true,
+                  "helpLinks": null
+               },
+               "installsUsed": [],
+               "showInstallations": false,
+               "maximumInstallations": 0,
+               "canUseInstallOptions": false,
+               "installHelpLink": "https://go.microsoft.com/fwlink/?LinkId=532747#https://support.office.com/article/d0c3b800-3f7b-4f92-962e-6198d4506ef5?wt.mc_id=O365_Cons_MyAcct_Install_NeedHelp#https://support.microsoft.com/article/d0c3b800-3f7b-4f92-962e-6198d4506ef5?wt.mc_id=O365_Cons_MyAcct_Install_NeedHelp#/en-us/office/get-help-installing-microsoft-365-family-d0c3b800-3f7b-4f92-962e-6198d4506ef5?wt.mc_id=O365_Cons_MyAcct_Install_NeedHelp",
+               "supportedClientPlatform": "cloudOS, macOS, windows"
+            },
+            "isMacOS": false,
+            "isRUMarketUnsupported": false,
+            "hasSkypeBenefit": false,
+            "serviceBannerContent": {
+               "slot2": null,
+               "slot3": null,
+               "slot4": null
+            },
+            "isSwitchPlanEligible": false,
+            "status": 1,
+            "purchaseLink": null,
+            "soldToAddressId": null,
+            "isValidateAddressNeeded": false,
+            "cycleDurationInMonths": null,
+            "billingState": 0,
+            "isXboxBrandId": false,
+            "isM365BrandId": false,
+            "isM365FullSku": false,
+            "isM365BasicSku": false,
+            "isHomeSKU": false,
+            "isM365ClassicSku": false,
+            "hasAIBenefits": false,
+            "convertedTo": null,
+            "upgradeToProductName": null,
+            "isCancellable": false,
+            "canTurnOffRecurringBilling": false,
+            "lastCharge": null,
+            "renewalRecurrence": null,
+            "isDowngradePending": false,
+            "isSinglePerpetual": true,
+            "isGroupPerpetual": false,
+            "isVatTextApplicable": false,
+            "isBillingDetailsAvailable": false,
+            "isXboxFamily": false,
+            "externallyManagedLink": null,
+            "isGuest": false,
+            "isXaa": false,
+            "renewPaths": {},
+            "isAutoRenewOffDueToInactivity": false,
+            "isSystemAutoRenewOffDueToIncorrectSubscriptionRegion": false,
+            "canEnableAutoRenew": false,
+            "quantity": 1,
+            "hasCopilotPro": false,
+            "isEligibleForOneMonthOffer": false,
+            "isSubscriptionNearExpiring": false,
+            "userConsent": null,
+            "cancelDowngradeUserConsent": null
+         }
+      ],
+      "commercial": [],
+      "canceled": [],
+      "hasPerpetual": true,
+      "landingPageBanner": null,
+      "allPossibleAddressIds": {},
+      "alerts": {
+         "alerts": []
+      }
+   },
+   "https://account.microsoft.com/services/api/install-post?licenseId=00000000000000000000000000000000&language=zh-CN&channel=default&platform=osx&clientVersion=office2019",
+   {
+      "url": "https://go.microsoft.com/fwlink/?linkid=2159108&Region=SG#https://go.microsoft.com/fwlink/?linkid=799520#https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.99.25071321_HomeStudent_Installer.pkg"
+   },
+   "https://account.microsoft.com/services/api/install-post?licenseId=00000000000000000000000000000000&language=zh-CN&channel=default&platform=windowsDefault&clientVersion=office2019",
+   {
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?productReleaseID=HomeStudent2021Retail&platform=Def&language=zh-CN&TaxRegion=sg&correlationId=00000000-0000-0000-0000-000000000000&token=00000000-0000-0000-0000-000000000000&version=O16GA&source=AMC&StoreId=CFQ7TTC0H8N8"
+   },
+   "https://account.microsoft.com/services/api/install-post?licenseId=00000000000000000000000000000000&language=zh-CN&channel=default&platform=win32&clientVersion=office2019",
+   {
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?productReleaseID=HomeStudent2021Retail&platform=X86&language=zh-CN&TaxRegion=sg&correlationId=00000000-0000-0000-0000-000000000000&token=00000000-0000-0000-0000-000000000000&version=O16GA&source=AMC&StoreId=CFQ7TTC0H8N8"
+   },
+   "https://account.microsoft.com/services/api/install-post?licenseId=00000000000000000000000000000000&language=zh-CN&channel=default&platform=win64&clientVersion=office2019",
+   {
+      "url": "https://c2rsetup.officeapps.live.com/c2r/download.aspx?productReleaseID=HomeStudent2021Retail&platform=X64&language=zh-CN&TaxRegion=sg&correlationId=00000000-0000-0000-0000-000000000000&token=00000000-0000-0000-0000-000000000000&version=O16GA&source=AMC&StoreId=CFQ7TTC0H8N8"
+   },
+   "https://account.microsoft.com/services/api/install-post?licenseId=00000000000000000000000000000000&language=zh-CN&channel=offline&platform=win32&clientVersion=office2019",
+   {
+      "url": "https://officecdn.microsoft.com/sg/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/zh-CN/HomeStudent2021Retail.img"
+   }
+]

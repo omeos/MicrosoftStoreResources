@@ -62,8 +62,8 @@
       url="${i%;*}" && ext="${i##*;}" && test "${url}" != "${ext}" || ext=
       printf '# %s\n\t> %s\t[%s]\t<%s>\n' "${dir}" "${url}" "${ext}" "${env}"
       (
-         mkdir -p -- "data/${dir}"
-         cd -L -- "data/${dir}"
+         mkdir -p -- "${dir}"
+         cd -L -- "${dir}"
          handler() { (
             printf '\t\t[%s]\n' "${lng}"
             mkdir -p -- "${lng}"

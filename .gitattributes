@@ -1,5 +1,5 @@
-CFQ7TTC0H8N8/data/MacOS[[:space:]](64-bit)/default/Microsoft_365_and_Office_16.99.25071321_HomeStudent_Installer.pkg.1 filter=lfs diff=lfs merge=lfs -text
-CFQ7TTC0H8N8/data/MacOS[[:space:]](64-bit)/default/Microsoft_365_and_Office_16.99.25071321_HomeStudent_Installer.pkg.2 filter=lfs diff=lfs merge=lfs -text
-CFQ7TTC0H8N8/data/Windows[[:space:]]Offline[[:space:]]Installer[[:space:]](32-bit[[:space:]]&[[:space:]]64-bit)/zh-CN/HomeStudent2021Retail.img.2 filter=lfs diff=lfs merge=lfs -text
-CFQ7TTC0H8N8/data/Windows[[:space:]]Offline[[:space:]]Installer[[:space:]](32-bit[[:space:]]&[[:space:]]64-bit)/zh-CN/HomeStudent2021Retail.img.3 filter=lfs diff=lfs merge=lfs -text
-CFQ7TTC0H8N8/data/Windows[[:space:]]Offline[[:space:]]Installer[[:space:]](32-bit[[:space:]]&[[:space:]]64-bit)/zh-CN/HomeStudent2021Retail.img.1 filter=lfs diff=lfs merge=lfs -text
+data/CFQ7TTC0H8N8/MacOS[[:space:]](64-bit)/default/Microsoft_365_and_Office_16.99.25071321_HomeStudent_Installer.pkg.1 filter=lfs diff=lfs merge=lfs -text
+data/CFQ7TTC0H8N8/MacOS[[:space:]](64-bit)/default/Microsoft_365_and_Office_16.99.25071321_HomeStudent_Installer.pkg.2 filter=lfs diff=lfs merge=lfs -text
+data/CFQ7TTC0H8N8/Windows[[:space:]]Offline[[:space:]]Installer[[:space:]](32-bit[[:space:]]&[[:space:]]64-bit)/zh-CN/HomeStudent2021Retail.img.2 filter=lfs diff=lfs merge=lfs -text
+data/CFQ7TTC0H8N8/Windows[[:space:]]Offline[[:space:]]Installer[[:space:]](32-bit[[:space:]]&[[:space:]]64-bit)/zh-CN/HomeStudent2021Retail.img.3 filter=lfs diff=lfs merge=lfs -text
+data/CFQ7TTC0H8N8/Windows[[:space:]]Offline[[:space:]]Installer[[:space:]](32-bit[[:space:]]&[[:space:]]64-bit)/zh-CN/HomeStudent2021Retail.img.1 filter=lfs diff=lfs merge=lfs -text

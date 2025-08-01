@@ -2,18 +2,30 @@
 # Git LFS per file size <= 2G
 # Git files per file size <= 100M
 # Git releases per file size <= 2G
+# 请务必在每次 git add 之前执行脚本
+# 脚本执行示例
+# (set -x; sh git_lfs_auto_handler.sh && git add --verbose --all && git commit --verbose --all --no-edit --no-allow-empty --allow-empty-message && (_="$(! git log -1 2>&1)" || : git pull --verbose --rebase origin) && git push --verbose --all --follow-tags $(: --force-with-lease) origin || exit "${?}")
 (
+   # 100M (104857600c) < LFS <= 2G (2147483648c), SPLIT = 2G (2147483648)
+   LFS_MIN_SIZE=+100M && LFS_MAX_SIZE=+2G && SPLIT_FILE_SIZE=2G
    eval "ECHO$(printf %s KCkgeyBjYXQgPDwtRU5ECiR7Kn0KRU5ECn0= | base64 -d)" || exit "${?}"
    # 当不是一个裸仓库
    test "$(git rev-parse --is-bare-repository)" != false || {
+      # 注册命令别名 git lfs.auto 与 git lfs-auto
+      for i in alias.lfs.auto alias.lfs-auto; do
+         git config unset --local --all -- "${i}" || true
+         # 命令别名工作目录总是在仓库根目录，全局变量 GIT_PREFIX 指向实际目录
+         git config set --local --all -- "${i}" '!main() { (sh git_lfs_auto_handler.sh "${@}"); } && main "${@}"; exit "${?}"; #' || continue
+      done || true
       # 切换至仓库根目录
       cd -L -- "$(git rev-parse --show-toplevel)" || exit "${?}"
       ECHO "工作目录 $(pwd -L)" 1>&2
       # 建立忽略规则文件
       excludesFile="${HOME}/.git/info/$(basename -- "$(pwd -L)")/exclude" || exit "${?}"
       mkdir -p -- "$(dirname -- "${excludesFile}")" || exit "${?}"
-      # 查找指定文件大小 > 2G (2147483648B)
-      find . -mindepth 1 ! -type d -size +2G -exec sh -c '
+      # 查找指定文件大小 > 2G (2147483648c)
+      find . -mindepth 1 ! -type d -size "${LFS_MAX_SIZE}" -exec sh -c '
+         SPLIT_FILE_SIZE="${0}"
          eval "ECHO$(printf %s KCkgeyBjYXQgPDwtRU5ECiR7Kn0KRU5ECn0= | base64 -d)" || exit "${?}"
          for i in "${@}"; do
             i="${i#./}" && (
@@ -50,8 +62,8 @@
 END
                )" - "$(printf %s e30= | base64 -d)" + || true
                ECHO "[大文件分割] 分割文件 ${fn}" 1>&2
-               # 分割指定文件
-               split -a 3 -b 2G -- "${fn}" "${tmp}" || {
+               # 分割指定文件 = 2G (2147483648)
+               split -a 3 -b "${SPLIT_FILE_SIZE}" -- "${fn}" "${tmp}" || {
                   # 尝试清理文件
                   e="${?}" && find . -mindepth 1 -maxdepth 1 ! -type d -name "${tmp}*" -delete || true
                   exit "${e}"
@@ -91,14 +103,18 @@ END
                ECHO "${i}"
             }
          done || true
-      ' - "$(printf %s e30= | base64 -d)" + | sed -e 's/[^a-zA-Z0-9]/\\&/g' 1>"${excludesFile}" || exit "${?}"
+      ' "${SPLIT_FILE_SIZE}" "$(printf %s e30= | base64 -d)" + | sed -e 's/[^a-zA-Z0-9]/\\&/g' 1>"${excludesFile}" || exit "${?}"
       # 配置忽略规则文件
       git config set --local --all --path -- core.excludesFile "${excludesFile}" || exit "${?}"
       find . -mindepth 1 ! "(" "(" -type d -a -path "*/.git" ")" -o -path "*/.git/*" ")" -exec sh -c '
          eval "ECHO$(printf %s KCkgeyBjYXQgPDwtRU5ECiR7Kn0KRU5ECn0= | base64 -d)" || exit "${?}"
-         ECHO "[大文件分割] 当前忽略规则：" 1>&2
-         for i in "${@}"; do
+         first= && for i in "${@}"; do
             i="${i#./}" && {
+               test -n "${first}" || {
+                  _="$(git check-ignore --verbose -- "${i}")" && {
+                     first=n && ECHO "[大文件分割] 当前忽略规则：" 1>&2
+                  } || true
+               }
                git check-ignore --verbose -- "${i}" || continue
             }
          done || true
@@ -110,8 +126,8 @@ END
          ECHO "[大文件存储] 清理规则 .gitattributes" 1>&2
          sed -i -e '/=lfs[[:space:]]/d' .gitattributes || true
       }
-      # 查找指定文件大小 > 100M (104857600B) <= 2G (2147483648B)
-      find . -mindepth 1 ! -type d "(" -size +100M -a ! -size +2G ")" -exec sh -c '
+      # 查找指定文件大小 > 100M (104857600c) <= 2G (2147483648c)
+      find . -mindepth 1 ! -type d "(" -size "${LFS_MIN_SIZE}" -a ! -size "${LFS_MAX_SIZE}" ")" -exec sh -c '
          eval "ECHO$(printf %s KCkgeyBjYXQgPDwtRU5ECiR7Kn0KRU5ECn0= | base64 -d)" || exit "${?}"
          for i in "${@}"; do
             i="${i#./}" && {
@@ -121,7 +137,7 @@ END
                   ECHO "[大文件存储] 工作目录 $(pwd -L)" 1>&2
                   # 确保在仓库工作树
                   test "$(git rev-parse --is-inside-work-tree)" != false || exit "${?}"
-               ) || exit "${?}"
+               ) || continue
                ECHO "[大文件存储] 更新规则 ${i} => .gitattributes" 1>&2
                # 重新更新跟踪规则
                git-lfs track --filename -- "${i}" || continue
@@ -177,13 +193,11 @@ END
             git-lfs push --all origin || exit "${?}"
          }
       }
-   }
-   exit "${?}"
+   } || exit "${?}"
    if false; then
-      for i in 104857599:-100M 104857600:100M 104857601:+100M; do
+      # 创建测试文件
+      for i in 104857599c:-100M 104857600c:100M 104857601c:+100M 1342177280c:1280M; do
          _="$(dd if=/dev/zero of="${i#*:}" bs="${i%:*}" count=0 seek=1 status=none)" || continue
       done || true
    fi
 ) 2>&1
-# (set -x; sh git_lfs_auto_handler.sh && git add --verbose --all && git commit --verbose --all --no-edit --no-allow-empty --allow-empty-message && (_="$(! git log -1 2>&1)" || : git pull --verbose --rebase origin) && git push --verbose --all --follow-tags $(: --force-with-lease) origin || exit "${?}")
-#: git config set --local --all -- alias.recycle '!main() { (:); } && main "${@}"; exit "${?}"; #' || exit "${?}"

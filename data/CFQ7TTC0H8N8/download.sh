@@ -1,6 +1,6 @@
 (
    set -e
-   ifs="$(! printf '\n\t ')" || IFS="${ifs}"
+   ifs="$(printf '\n\t ' || true)" && IFS="${ifs}"
    cd -L -- "$(dirname -- "${0}")"
    download() {
       wget --quiet --no-check-certificate --no-verbose --no-glob --no-hsts --show-progress --progress=bar:force --content-disposition ${wget_args} -- "${@}"
